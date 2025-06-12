@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Спасибо за установку StudySync</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="logo.png" type="image/png" />
+
+  <!-- Шрифты и иконки -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <style>
+    /* Общие стили */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%); 
+      color: #d4d4d4;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: #3794ff;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #4fc1ff;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #ffffff;
+      text-shadow: 0 0 6px #3794ff;
+    }
+
+    p.lead {
+      font-size: 1.3em;
+      color: #a6a6a6;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .actions {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #007acc;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #005ba1;
+      transform: translateY(-2px);
+    }
+
+    footer.bottom-bar {
+      background-color: #252526;
+      color: #a6a6a6;
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid #3c3c3c;
+      margin-top: 60px;
+    }
+
+    .social-links a {
+      color: #a6a6a6;
+      margin: 0 15px;
+      font-size: 1.8em;
+      transition: color 0.2s ease;
+    }
+
+    .social-links a:hover {
+      color: #4fc1ff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Основной контент -->
+  <main class="container">
+    <h1>Спасибо за установку StudySync!</h1>
+    <p class="lead">Мы рады, что вы выбрали нашу программу для управления успеваемостью. StudySync поможет вам эффективно отслеживать успехи учащихся и анализировать данные.</p>
+
+    <div class="actions">
+      <a href="index.html" class="btn">На главную</a>
+      <a href="https://github.com/stquremwork/Study-Sync.git"  target="_blank" class="btn">Посмотреть на GitHub</a>
+    </div>
+  </main>
+
+  <!-- Футер -->
+  <footer class="bottom-bar">
+    <div class="container">
+      <p>&copy; 2025 StudySync. Все права защищены.</p>
+      <p>Разработал: Шкут Тимофей Витальевич, группа П-32</p>
+      <div class="social-links">
+        <a href="https://github.com/stquremwork"  target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/тимофей-шкут-30765b34b/"  target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://t.me/pelmen_s_mazikom"  target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+        <a href="mailto:timofeyshkut1985@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
