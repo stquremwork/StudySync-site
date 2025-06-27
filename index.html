@@ -6,7 +6,231 @@
   <title>StudySync</title>
   <link rel="icon" href="logo.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudySync</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+      color: #d4d4d4;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a { color: #3794ff; text-decoration: none; transition: color 0.2s; }
+    a:hover { color: #4fc1ff; }
+    .container {
+      width: 98%;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 16px 6px;
+      flex-grow: 1;
+    }
+    header.top-bar {
+      background: #252526;
+      color: #d4d4d4;
+      padding: 6px 0;
+      border-bottom: 1px solid #3c3c3c;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .top-bar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .left-elements {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      height: 28px;
+      margin-right: 8px;
+      filter: drop-shadow(0 0 2px #3794ff);
+    }
+    .program-name {
+      font-size: 1.1em;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 0.5px;
+      margin-right: 12px;
+    }
+    nav.menu {
+      display: flex;
+      gap: 10px;
+    }
+    nav.menu a {
+      font-size: 0.95em;
+      background: #2a2a2a;
+      color: #a6a6a6;
+      padding: 5px 12px;
+      border-radius: 4px;
+      transition: background 0.2s, color 0.2s;
+    }
+    nav.menu a:hover {
+      background: #3794ff;
+      color: #fff;
+    }
+    .download-button {
+      background: #007acc;
+      color: #fff;
+      padding: 7px 14px;
+      border-radius: 5px;
+      font-size: 0.95em;
+      font-weight: 600;
+      margin-left: 8px;
+      transition: background 0.2s;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+    .download-button:hover { background: #005ba1; }
+    main {
+      padding-top: 16px;
+      padding-bottom: 10px;
+    }
+    h1 {
+      font-size: 1.2em;
+      margin: 0 0 8px 0;
+      color: #fff;
+      text-shadow: 0 0 3px #3794ff;
+    }
+    p.lead {
+      font-size: 1em;
+      color: #a6a6a6;
+      margin-bottom: 15px;
+    }
+    .info-box {
+      margin-top: 14px;
+      background: #232323;
+      padding: 12px 14px;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      font-size: 0.98em;
+    }
+    .info-box h2 {
+      margin: 0 0 8px 0;
+      font-size: 1em;
+      color: #fff;
+      border-bottom: 1px solid #3c3c3c;
+      padding-bottom: 5px;
+    }
+    .info-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .info-box li {
+      padding: 3px 0;
+      color: #a6a6a6;
+      font-size: 0.98em;
+    }
+    footer.bottom-bar {
+      background: #252526;
+      color: #a6a6a6;
+      text-align: center;
+      padding: 6px 0 2px 0;
+      border-top: 1px solid #3c3c3c;
+      font-size: 0.92em;
+      position: fixed;
+      width: 100vw;
+      left: 0;
+      bottom: 0;
+      z-index: 20;
+    }
+    .social-links {
+      margin: 4px 0 0 0;
+    }
+    .social-links a {
+      color: #a6a6a6;
+      margin: 0 7px;
+      font-size: 1.2em;
+      transition: color 0.2s;
+    }
+    .social-links a:hover { color: #4fc1ff; }
+    @media (max-width: 600px) {
+      .container { max-width: 99vw; padding: 8px 2vw; }
+      .top-bar .container { flex-direction: column; align-items: flex-start; }
+      .left-elements { margin-bottom: 6px; }
+      nav.menu { gap: 6px; }
+      .download-button { margin-left: 0; margin-top: 6px; }
+      .info-box { font-size: 0.93em; }
+      .social-links a { font-size: 1em; margin: 0 4px; }
+      footer.bottom-bar { font-size: 0.85em; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="top-bar">
+    <div class="container">
+      <div class="left-elements">
+        <img src="logo.png" alt="StudySync Logo" class="logo">
+        <span class="program-name">StudySync</span>
+      </div>
+      <nav class="menu">
+        <a href=
+          "https://s246klg.storage.yandex.net/rdisk/26fcaa0f19096066871ca937b765e87e5e91fd8afa0f60d634483a5b8af54212/685e8db1/ipmlWPH2Ri2bayqMQWe1BhkoaFXJWQABG4iz7DPQFATsU_uoWuodHLZrInWV8XLytuv8roCvZiir7JFMormHkg==?uid=0&filename=StudySyncSetup.exe&disposition=attachment&hash=kdec%2BiDBu%2B2T0WW/GovI0YeUmSLG%2Bi4ogb2rkF2gw3%2BZro8oixwSGjtARhRNQ0U6q/J6bpmRyOJonT3VoXnDag%3D%3D&limit=0&content_type=application%2Fx-dosexec&owner_uid=825027108&fsize=6011788&hid=8be7a5b88920692778395c65a523d3f0&media_type=executable&tknv=v3&ts=6388cc58a0e40&s=8a278e05bc7340d9ebed8a2d04a50622a684cbcb1861e6cedafebfee9bfd6fd5&pb=U2FsdGVkX18nnUlsIg3wOgudqjw8IetJ6wZIvTYwJWmXnWTLHVxjI5lsVqFB1WvAn_9khaqdcxplY0xyIUAzd_Wdh5KimFnvbL8wdPCmTOg"
+          class="download-button" download>Скачать</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основной контент -->
+  <main class="container">
+    <h1>StudySync — управление успеваемостью учащихся</h1>
+    <p class="lead">Программа для эффективного отслеживания и анализа успеваемости с использованием базы данных.</p>
+
+    <section class="info-box" id="about">
+      <h2>Информация о программе</h2>
+      <ul>
+        <li><b>Название:</b> StudySync</li>
+        <li><b>Версия:</b> 1.0</li>
+        <li><b>Дата релиза:</b> 5 апреля 2025</li>
+        <li><b>Платформа:</b> Windows 11</li>
+        <li><b>Технологии:</b> C#, PostgreSQL, Guna UI2, WinForms</li>
+        <li><b>Лицензия:</b> MIT License</li>
+        <li><b>Репозиторий:</b> <a href="https://github.com/stquremwork/Study-Sync.git" target="_blank">GitHub</a></li>
+      </ul>
+    </section>
+
+    <section class="info-box" id="requirements">
+      <h2>Системные требования</h2>
+      <ul>
+        <li><b>ОС:</b> Windows 7+</li>
+        <li><b>RAM:</b> 2 ГБ</li>
+        <li><b>Диск:</b> 500 МБ</li>
+        <li><b>C#:</b> 13</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bottom-bar" id="contacts">
+    <div class="container">
+      <div>
+        &copy; 2025 StudySync. Все права защищены.<br>
+        Разработал: Шкут Тимофей Витальевич, П-32
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/stquremwork" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/тимофей-шкут-30765b34b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://t.me/pelmen_s_mazikom" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+        <a href="mailto:timofeyshkut1985@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+/libs/font-awesome/6.0.0/css/all.min.css" />
   <style>
     body {
       font-family: 'Inter', sans-serif;
